@@ -16,9 +16,9 @@ phases:
       - echo Build completed on `date`
       - echo Pushing the Docker image...
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/$IMAGE_REPO_NAME:$IMAGE_TAG
-  artifacts:
-    files:
-      - '**/*'
-    base-directory: s3://codepipeline-sa-east-1-238026493050/TemplateApiPipe/BuildArtif/
-    name: template-api-artifact
-    discard-paths: no
+artifacts:
+  files:
+    - '**/*'
+  base-directory: s3://codepipeline-sa-east-1-238026493050/TemplateApiPipe/BuildArtif/
+  name: template-api-artifact
+  discard-paths: no
