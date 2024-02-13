@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/Amg-Ingressos-aqui-notificacao-api.props" />
+</Project>

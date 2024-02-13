@@ -28,9 +28,9 @@ namespace Amg_Ingressos_aqui_notificacao_api.Controllers
         /// <returns>500 Erro inesperado</returns>
         [HttpGet]
         [Route("login")]
-        public async Task<IActionResult> Save(Notification notification)
+        public async Task<IActionResult> Save()
         {
-            if (!ModelState.IsValid)
+            /*if (!ModelState.IsValid)
                 throw new RuleException("Dados sao necessários");
 
             var result = await _notificationService.Save(notification);
@@ -42,8 +42,11 @@ namespace Amg_Ingressos_aqui_notificacao_api.Controllers
             }
             if (result.Data.ToString() == string.Empty)
                 return NoContent();
+            
 
             return Ok(result.Data);
+            */
+            return Ok("Teste Publish");
         }
     }
 }

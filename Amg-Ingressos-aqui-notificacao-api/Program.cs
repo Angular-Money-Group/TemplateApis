@@ -22,7 +22,7 @@ builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 // Add services to the container.
 builder.Services.Configure<NotificationDatabaseSettings>(
-    builder.Configuration.GetSection("AuthDatabase"));
+    builder.Configuration.GetSection("NotificationDatabase"));
 builder.Services.Configure<ServicesSettings>(
     builder.Configuration.GetSection("ServicesSettings"));
 
