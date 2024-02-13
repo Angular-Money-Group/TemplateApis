@@ -2,8 +2,6 @@ version: 0.2
 
 phases:
   install:
-    runtime-versions:
-      docker: 19
     commands:
       ## Get .net 7.0
       - "wget https://dot.net/v1/dotnet-install.sh -O dotnet-install.sh"
