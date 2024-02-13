@@ -19,6 +19,4 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: s3://codepipeline-sa-east-1-238026493050/TemplateApiPipe/SourceArti/
-  name: template-api-artifact
   discard-paths: no
