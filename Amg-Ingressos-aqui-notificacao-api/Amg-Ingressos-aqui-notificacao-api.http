@@ -1,0 +1,6 @@
+@Amg_Ingressos_aqui_notificacao-api_HostAddress = http://localhost:5265
+
+GET {{Amg_Ingressos_aqui_notificacao_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

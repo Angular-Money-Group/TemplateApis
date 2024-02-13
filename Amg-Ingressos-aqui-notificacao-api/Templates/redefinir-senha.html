@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900display=swap"
+      rel="stylesheet"
+    />
+    <title>Redefinir Senha</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      p {
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .card {
+        width: 50%;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #f2994a;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px 0px #f2994a;
+      }
+      .card-title {
+        text-align: center;
+        font-family: "Sora", sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+      }
+      .card-title-user {
+        text-align: center;
+        font-family: "Sora", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      .material-symbols-outlined {
+        color: #f2994a;
+        font-size: 40px;
+      }
+      .expira {
+        color: #ff0000;
+        margin-bottom: 10px;
+      }
+      .clique-link {
+        margin: 20px 0;
+        color: #f2994a;
+        font-family: "Sora", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 13px;
+      }
+      .link {
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        word-wrap: break-word;
+      }
+
+      @media (max-width: 678px) {
+        body {
+          background-color: #fff;
+        }
+        .card {
+          width: 100%;
+          height: 100vh;
+          border: none;
+          border-radius: 0;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="card-title">Redefinir a Senha</h1>
+      <hr style="width: 100%; margin: 20px 0" />
+      <h2 class="card-title-user">Olá, {{Usuário}}</h2>
+      <p>
+        Recebemos uma solicitação de alteração da sua senha em:
+        <b>{{25/04/2023}}</b> às <b>{{10:15:11}}</b>
+      </p>
+      <p>Para iniciar o processo de alteração e redefinir uma nova senha</p>
+      <a class="clique-link" href="{{link_redefinir}}">Clique Aqui</a>
+      <p>
+        Se o link acima não funcionar, copie o caminho abaixo e cole em seu
+        navegador.
+      </p>
+      <a class="link"> {{linkTeste}} </a>
+    </div>
+  </body>
+</html>
