@@ -7,6 +7,13 @@ Resources:
         LoadBalancerInfo:
           ContainerName: "TemplateApi"
           ContainerPort: 80
+# Optional properties
+        PlatformVersion: "LATEST"
+        NetworkConfiguration:
+            AwsvpcConfiguration:
+              Subnets: ["subnet-01a8fe0c15ba81bff", "subnet-0cefdc8f90898369b"]
+              SecurityGroups: ["sg-08d9c4d53246f8fa3"]
+              AssignPublicIp: "ENABLED"
 Hooks:
 - BeforeInstall: "BeforeInstallHookFunctionName"
 - AfterInstall: "AfterInstallHookFunctionName"

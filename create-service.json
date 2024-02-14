@@ -1,0 +1,34 @@
+{
+    "taskDefinition": "TemplateApiTaskDefinition:1",
+    "cluster": "Cluster-Apis",
+    "loadBalancers": [
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:sa-east-1:590184025050:targetgroup/target-group-apis-1/6c7b308aee9d49f4",
+            "containerName": "TemplateApi",
+            "containerPort": 80
+        },
+        {
+            "targetGroupArn": "arn:aws:elasticloadbalancing:sa-east-1:590184025050:targetgroup/target-group-apis-2/b53dbbb6554881fa",
+            "containerName": "TemplateApi",
+            "containerPort": 8080
+        }
+    ],
+    "desiredCount": 1,
+    "launchType": "FARGATE",
+    "schedulingStrategy": "REPLICA",
+    "deploymentController": {
+        "type": "CODE_DEPLOY"
+    },
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+            "subnets": [
+                "subnet-01a8fe0c15ba81bff",
+                "subnet-0cefdc8f90898369b"
+            ],
+            "securityGroups": [
+                "sg-08d9c4d53246f8fa3"
+            ],
+            "assignPublicIp": "ENABLED"
+        }
+    }
+}
