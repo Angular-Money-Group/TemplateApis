@@ -1,5 +1,15 @@
-version: 0.0 os: linux
-hooks:
-ApplicationStart:
-- location: start-process.sh
-timeout: 00
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: <TASK_DEFINITION>
+        LoadBalancerInfo:
+          ContainerName: "TemplateApi"
+          ContainerPort: 80
+Hooks:
+- BeforeInstall: "BeforeInstallHookFunctionName"
+- AfterInstall: "AfterInstallHookFunctionName"
+- AfterAllowTestTraffic: "AfterAllowTestTrafficHookFunctionName"
+- BeforeAllowTraffic: "BeforeAllowTrafficHookFunctionName"
+- AfterAllowTraffic: "AfterAllowTrafficHookFunctionName"
