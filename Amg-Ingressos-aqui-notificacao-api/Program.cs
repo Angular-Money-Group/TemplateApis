@@ -83,7 +83,7 @@ if (app.Environment.IsDevelopment())
 }
 
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseStaticFiles(); // Certifique-se de ter essa linha
 app.UseCors(x => x
                 .AllowAnyMethod()
