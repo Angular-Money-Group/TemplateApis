@@ -14,9 +14,3 @@ Resources:
               Subnets: ["subnet-01a8fe0c15ba81bff", "subnet-0cefdc8f90898369b"]
               SecurityGroups: ["sg-08d9c4d53246f8fa3"]
               AssignPublicIp: "ENABLED"
-Hooks:
-- BeforeInstall: "BeforeInstallHookFunctionName"
-- AfterInstall: "AfterInstallHookFunctionName"
-- AfterAllowTestTraffic: "AfterAllowTestTrafficHookFunctionName"
-- BeforeAllowTraffic: "BeforeAllowTrafficHookFunctionName"
-- AfterAllowTraffic: "AfterAllowTrafficHookFunctionName"

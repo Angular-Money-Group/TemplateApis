@@ -2,7 +2,6 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Amg_Ingressos_aqui_notificacao_api.Consts;
-using Amg_Ingressos_aqui_notificacao_api.Model;
 using Microsoft.IdentityModel.Tokens;
 
 namespace Amg_Ingressos_aqui_notificacao_api.Services
