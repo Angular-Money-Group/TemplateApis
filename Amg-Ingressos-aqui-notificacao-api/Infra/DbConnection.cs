@@ -16,9 +16,10 @@ namespace Amg_Ingressos_aqui_notificacao_api.Infra
 
         public IMongoCollection<T> GetConnection<T>()
         {
+            
             var colletionName = GetCollectionName<T>();
-            var mongoUrl = new MongoUrl(_config.Value.ConnectionString);
-            _mongoClient = new MongoClient(mongoUrl);
+            Console.WriteLine(Environment.GetEnvironmentVariable("MONGOURL")?? "está nullllllllllllllllllll");
+            _mongoClient = new MongoClient(new MongoUrl(Environment.GetEnvironmentVariable("MONGOURL")));
             var mongoDatabase = _mongoClient.GetDatabase(_config.Value.DatabaseName);
 
             return mongoDatabase.GetCollection<T>(colletionName);
