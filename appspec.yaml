@@ -1,5 +1,5 @@
 version:0.0 os: linux
 hooks: 
 ApplicationStart:
-- location: start-process.s 
-timeout: 00
+    - location: start-process.s 
+      timeout: 00
