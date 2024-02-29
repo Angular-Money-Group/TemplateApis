@@ -3,4 +3,4 @@ os: linux
 hooks:
   ApplicationStart:
     - location: start-process.sh
-      timeout: 00
+      timeout: 300
