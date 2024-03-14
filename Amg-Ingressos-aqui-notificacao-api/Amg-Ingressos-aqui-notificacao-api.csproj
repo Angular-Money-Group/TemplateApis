@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <InvariantGlobalization>true</InvariantGlobalization>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <RootNamespace>Amg_Ingressos_aqui_notificacao_api</RootNamespace>
   </PropertyGroup>
 
